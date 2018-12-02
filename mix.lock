@@ -1,3 +1,3 @@
 %{
-  "contest_helpers": {:git, "https://github.com/Szetty/contest_helpers", "60de636853618fe9106a6324651262d247526924", [tag: "master"]},
+  "contest_helpers": {:git, "https://github.com/Szetty/contest_helpers", "8d769840bba0b84b3479d1af1f99956c5c4083dd", [tag: "master"]},
 }
