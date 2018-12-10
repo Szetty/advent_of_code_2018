@@ -1,5 +1,7 @@
 use DataStructures
 
+minutes = 0..59
+
 data =
   "inputs/4"
   |> In.f()
@@ -37,7 +39,7 @@ f = &(fn {s, e} -> (s <= &1) && (&1 <= e) end)
 
   {id, {l, _v}} = m |> max_by(fn {_key, {_l, v}} -> v end)
   {min, _} =
-    0..59
+    minutes
     |> map(&({&1, count(l, f.(&1))}))
     |> max_by(fn {_min, c} -> c end)
   (id * min) |> p
@@ -46,7 +48,7 @@ f = &(fn {s, e} -> (s <= &1) && (&1 <= e) end)
 #second
 
   {min, {id, _c}} =
-    0..59
+    minutes
     |> map(&({
         &1,
         map(m, fn {key, {l, _v}} ->
