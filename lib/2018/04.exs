@@ -3,7 +3,7 @@ use DataStructures
 minutes = 0..59
 
 data =
-  "inputs/4"
+  "inputs/04"
   |> In.f()
   |> sort
   |> map(fn s ->

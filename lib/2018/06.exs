@@ -3,7 +3,7 @@ use DataStructures
 man  = fn {x1, y1}, {x2, y2} -> abs(x2 - x1) + abs(y2 - y1) end
 
 data =
-  "inputs/6"
+  "inputs/06"
   |> In.f(column: ",")
   |> map(fn [x, y] -> {x |> Str.to_integer, y |> Str.trim |> Str.to_integer} end)
 

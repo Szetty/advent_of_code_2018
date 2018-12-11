@@ -1,7 +1,7 @@
 use DataStructures
 
 words =
-  "inputs/2"
+  "inputs/02"
   |> In.f()
   |> map(&Str.graphemes/1)
 

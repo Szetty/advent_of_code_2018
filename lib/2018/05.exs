@@ -3,7 +3,7 @@ use DataStructures
 letters = for n <- ?a..?z, do: << n :: utf8 >>
 
 data =
-  "inputs/5"
+  "inputs/05"
   |> In.f()
   |> hd
   |> Str.graphemes

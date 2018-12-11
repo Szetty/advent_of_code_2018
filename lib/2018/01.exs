@@ -1,7 +1,7 @@
 use DataStructures
 
 changes =
-  "inputs/1"
+  "inputs/01"
   |> In.f(to: :i)
 
 #first

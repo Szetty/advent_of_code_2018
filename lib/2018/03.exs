@@ -3,7 +3,7 @@ use DataStructures
 regex_for_numbers = ~r"\d+"
 
 claims =
-  "inputs/3"
+  "inputs/03"
   |> In.f()
   |> map(fn claim ->
     [id, xs, ys, xl, yl] = Regex.scan(regex_for_numbers, claim) |> map(&(&1 |> hd |> Str.to_integer))
